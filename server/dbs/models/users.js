@@ -11,6 +11,8 @@ const UserSchema = new Schema({
 		require:true,
 	},
 	email:{
-		type:String
+		type:String,
+		require:true
 	}
 })
+export default mongoose.model('User',UserSchema)
