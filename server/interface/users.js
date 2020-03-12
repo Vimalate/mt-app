@@ -84,7 +84,7 @@ router.post('/signup', async (ctx) => {
 })
 
 router.post('/signin', async (ctx, next) => {
-  return Passport.authenticate('local', function (err, user, info, status) {
+  return Passport.authenticate('local', function(err, user, info, status) {
     if (err) {
       ctx.body = {
         code: -1,
