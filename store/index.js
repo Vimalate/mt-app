@@ -32,7 +32,8 @@ const store = () => new Vuex.Store({
         }
       } = await app.$axios.get('/geo/menu')
       commit('geo/menu',status2===200?menu:[])
-      console.log(province, city)
+      console.log(menu)
+      console.log(province,city)
     }
   }
 })
